@@ -1,0 +1,155 @@
+---
+title: ionic3之tabs用法详解,你知道的和不知道的都在这儿
+date: 2018-06-06 10:30:00
+categories: "ionic3"
+tags:
+     - ionic
+     - ionic3
+---
+
+> ***
+
+<table> 
+  <tr> 
+    <th>标签</th> 
+    <th>类型</th> 
+    <th>作用</th> 
+  </tr>
+  <tr> 
+    <td>[root]</td> 
+    <td>Page</td> 
+    <td>指定tab希望加载的页面</td> 
+  </tr> 
+  <tr> 
+    <td>tabTitle</td> 
+    <td>string</td> 
+    <td>tab上显示的标题</td> 
+  </tr> 
+  <tr> 
+    <td>tabIcon</td> 
+    <td>string</td> 
+    <td>tab上显示的图标</td> 
+  </tr> 
+  <tr> 
+    <td>tabBadge</td> 
+    <td>string</td> 
+    <td>tab上显示的角标数字</td> 
+  </tr> 
+  <tr> 
+    <td>tabBadgeStyle</td> 
+    <td>string</td> 
+    <td>角标数字的颜色</td> 
+  </tr>
+ <tr> 
+   <td>enabled</td> 
+   <td>boolean</td> 
+   <td>tab是否可用，默认为true</td> 
+ </tr> 
+ <tr> 
+   <td>show</td> 
+   <td>boolean</td> 
+   <td>tab是否显示</td> 
+ </tr> 
+ <tr> 
+   <td>[rootParams]</td> 
+   <td>object</td> 
+   <td>tab上传递的参数</td> 
+ </tr>  
+ <tr> 
+   <td>tabUrlPath</td> 
+   <td>string</td> 
+   <td>点击tab时跳转的页面url</td> 
+ </tr>  
+ <tr> 
+   <td>swipeBackEnabled</td> 
+   <td>boolean</td> 
+   <td>是否支持滑动后退</td> 
+ </tr>  
+ <tr> 
+   <td>tabsHideOnSubPages</td> 
+   <td>boolean</td> 
+   <td>在子页面是否隐藏</td> 
+ </tr>  
+ <tr> 
+   <td>(ionSelect)</td> 
+   <td>方法</td> 
+   <td>tab select 方法</td> 
+ </tr>  
+</table>
+
+ ***
+
+ <!-- more -->
+
+## 属性和事件详解
+
+* 示例html代码如下:
+
+```html
+<ion-tabs #mainTabs (ionChange)="changeTabs()" color="danger" tabsHighlight="true">
+    <ion-tab [root]="tab1Root" [rootParams]="homeParams" tabTitle="Home" tabIcon="home"></ion-tab>
+    <ion-tab [root]="tab2Root" (ionSelect)="selectFriend()" tabTitle="Friends" tabIcon="aperture" tabBadge="3" tabBadgeStyle="danger"></ion-tab>
+    <ion-tab [root]="tab3Root" enabled="false"  swipeBackEnabled="true" tabTitle="Contact" tabIcon="contacts"></ion-tab>
+</ion-tabs>
+```
+
+* 示例typeScript脚本代码如下：
+
+```typescript
+import { Component, ViewChild } from '@angular/core';
+import { HomePage } from '../home/home';
+import { AboutPage } from '../about/about';
+import { ContactPage } from '../contact/contact';
+import { Tabs, ModalController } from 'ionic-angular';
+
+@Component({templateUrl: 'tabs.html'})
+export class TabsPage {
+  @ViewChild('mainTabs') tabRef: Tabs;
+  // this tells the tabs component which Pages
+  // should be each tab's root Page
+  // 为tab标签指定导航至的页面
+  tab1Root: any = HomePage;
+  tab2Root: any = AboutPage;
+  tab3Root: any = ContactPage;
+  // 指定参数,在tab指向的页面可以读取到该参数
+  homeParams: any = {user1: 'admin', user2: 'ionic'};
+
+  constructor(public modalCtrl: ModalController) {
+  }
+  changeTabs = function () {
+    console.log('tab changed');
+  };
+  // 选中tab页后的事件
+  selectFriend() {
+    let modal = this.modalCtrl.create(ContactPage); // 声明一个modal
+    modal.present(); // 弹出modal
+  }
+
+  ionViewDidEnter() {
+    let mainTabs = this.tabRef;
+    mainTabs.select(1);
+  }
+}
+```
+
+* home页使用参数示例代码如下：
+```typescript
+import { Component } from '@angular/core';
+// 引入NavParams
+import { NavController,NavParams } from 'ionic-angular';
+
+@Component({
+    selector: 'page-home',
+    templateUrl: 'home.html'
+})
+export class HomePage {
+    // 在这里指定navParams
+    constructor(public navCtrl: NavController,public navParams:NavParams) {
+    }
+    ionViewWillEnter(){
+        // 使用this.navParams.data可以读取tab页传过来的参数
+        console.log("NavParams:"+this.navParams.data.user1);
+        console.log("NavParams:"+this.navParams.data.user2);
+    }
+}
+```

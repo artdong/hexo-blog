@@ -1,0 +1,97 @@
+// Custom styles.
+.platform-preview {
+  /*position: absolute;*/
+  position: relative;
+  right: 0;
+  text-align: center;
+  left: 0px;
+  z-index: 1;
+  background-color: white;
+}
+
+.platform-preview.fixey {
+  position: fixed;
+  top: 0;
+}
+
+.platform-preview > a {
+  position: relative;
+  top: -25px;
+  font-size: 15px;
+}
+
+.platform-preview > a, .platform-preview > a:hover, .platform-preview > a:active, .platform-preview > a:focus {
+  text-decoration: none;
+}
+
+.platform-preview .platform-toggle a, .docs-container .sass-platform-toggle a {
+  cursor: pointer;
+  display: inline-block;
+  padding: 4px 16px;
+  border-radius: 16px;
+  color: #9da5b3;
+  font-size: 14px;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  transition: .2s color, .2s background-color;
+}
+
+.platform-preview .platform-toggle a.active, .platform-preview .platform-toggle a.active:hover, .docs-container .sass-platform-toggle a.active, .docs-container .sass-platform-toggle a.active:hover {
+  background-color: #4a8bfc;
+  color: white;
+}
+
+.platform-preview .platform-toggle a:hover, .docs-container .sass-platform-toggle a:hover {
+  color: #4a8bfc;
+  text-decoration: none;
+}
+
+.platform-preview .platform-toggle {
+  padding: 8px 10px 4px;
+}
+
+#demo-device-ios, #demo-device-android, #demo-device-windows {
+  width: 467px;
+  height: 800px;
+  background: center top no-repeat url("../images/blog/devices-sprite.jpg");
+  background-size: 467px;
+  margin: 0 auto;
+}
+
+#demo-device-ios iframe, #demo-device-android iframe, #demo-device-windows iframe {
+  margin-top: 55px;
+  width: 320px;
+  height: 568px;
+}
+
+#demo-device-android {
+  background-position: center center;
+}
+
+#demo-device-android iframe {
+  margin-top: 32px;
+  width: 360px;
+  height: 590px;
+}
+
+#demo-device-windows {
+  background-position: center bottom;
+}
+
+#demo-device-windows iframe {
+  margin-top: 72px;
+  width: 350px;
+  height: 622px;
+  background: white;
+}
+
+.headband {
+  height: 3px;
+  background: #219eff;
+}
+.site-meta {
+  padding: 20px 0;
+  color: #fff;
+  //background: #3374de;
+  background: #219eff;
+}
