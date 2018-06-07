@@ -373,8 +373,8 @@ disqus:
 # Gitalk
 Gitalk:
   enable: true
-  clientID: '6128e9da22c99bf5cf9d'
-  clientSecret: '9af15dad1f82e0da7da7624f330f3a30612d0fbc'
+  clientID: 'c8164258ab4a996367d9'
+  clientSecret: '8d03ebc861a146342b4b126955bc67e68293dd6f'
   repo: 'hexo-blog-grace'
   owner: 'alex-0407'
   admin: 'alex-0407'
