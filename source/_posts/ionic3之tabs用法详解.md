@@ -9,6 +9,18 @@ tags:
 
 > ***
 
+Tabs（选项卡）
+ion-tabs
+
+在一个 app 中，Tabs 使得在不同页面和功能之间导航更加容易。Tabs 组件，以 <ion-tabs> 的方式写，是单个 Tab 组件的容器。每个 <ion-tab> 对于 NavControll 来说是公开的组件。
+
+那么tabs有哪些属性和事件呢？下面详细介绍一下: 
+
+ ***
+ <!-- more -->
+
+## 属性和事件详解
+
 <table> 
   <tr> 
     <th>标签</th> 
@@ -76,12 +88,6 @@ tags:
    <td>tab select 方法</td> 
  </tr>  
 </table>
-
- ***
-
- <!-- more -->
-
-## 属性和事件详解
 
 * 示例html代码如下:
 
