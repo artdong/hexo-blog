@@ -7,19 +7,15 @@ tags:
      - css3
 ---
 
-> ***
-
-### position 属性介绍
+ <h3 id="position 属性介绍"> position 属性介绍 </h3>
 
 （1）position 属性自 CSS2 起就有了，该属性规定元素的定位类型。所有主流浏览器都支持 position 属性。
 
 （2）position 的可选值有四个：static、relative、absolute、fixed。下面分别进行介绍。（其实还有个 inherit，不过这个是 IE 特有的，这里就不做讨论）
 
- ***
-
  <!-- more -->
 
-### position: static（默认值）
+<h3 id="position: static（默认值）"> position: static（默认值）</h3>
 
 1，基本介绍
 （1）static 是默认值。表示没有定位，或者说不算具有定位属性。
@@ -47,7 +43,9 @@ html:
 
 <div class="position-static"></div> <input type="text"/>
 
-### position: relative（相对定位） 
+
+
+<h3 id="position: relative（相对定位）"> position: relative（相对定位）</h3>
 
 1，基本介绍
 
@@ -86,7 +84,7 @@ css:
 
 <div class="position-relative"></div> <input type="text" class="position-relative-input"/>
 
-### position: absolute（绝对定位）
+<h3 id="position: absolute（绝对定位）"> position: absolute（绝对定位）</h3>
 
 1，基本介绍
 
@@ -136,12 +134,14 @@ html:
 ```
 运行效果如下，标题元素虽然是在边框容器的内部。但由于其使用绝对定位，并做位置调整，最后显示效果就是覆盖在父容器边框上。
 
+<br><br>
+
 <div class="position-absolute">
   <div class="position-absolute-title">标题</div>
   嘿，guys！欢迎访问我的博客。
 </div>
 
-### position: fixed（固定定位）
+<h3 id="position: fixed（固定定位）"> position: fixed（固定定位）</h3>
 
 1，基本介绍
 （1）fixed 生成绝对定位的元素，该元素相对于浏览器窗口进行定位。
