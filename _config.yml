@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: alex的博客
+title: artdong的博客
 subtitle:
 description: 关注微信公众号——全栈弄潮儿，获取angular1/2/4、ionic1/2/3、react native、vue、nodejs、小程序等最新技术文章、视频教程和开源项目，一起交流分享全栈开发最新技术。
 author: 扫码关注
@@ -12,7 +12,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://github.com/alex-0407
+url: https://github.com/artdong
 root: /blog/
 permalink: :year/:month/:day/:title/
 permalink_defaults:

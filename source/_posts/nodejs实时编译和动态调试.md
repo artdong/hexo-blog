@@ -78,5 +78,5 @@ github地址：https://github.com/saschagehlich/hotnode
 ## nodejs + express入门示例
 
 
-nodejs + express入门示例： https://github.com/alex-0407/node-server
+nodejs + express入门示例： https://github.com/artdong/node-server
 

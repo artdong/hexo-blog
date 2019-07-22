@@ -55,7 +55,7 @@ footer:
     version: false
   # -------------------------------------------------------------
   # Any custom text can be defined here.
-  custom_text: <iframe frameborder="0" scrolling="0" width="90px" height="22px" src="https://ghbtns.com/github-btn.html?user=alex-0407&amp;repo=hexo-blog-grace&amp;type=star&amp;count=false"> </iframe>
+  custom_text: <iframe frameborder="0" scrolling="0" width="90px" height="22px" src="https://ghbtns.com/github-btn.html?user=artdong&amp;repo=hexo-blog-grace&amp;type=star&amp;count=false"> </iframe>
 
 # ---------------------------------------------------------------
 # SEO Settings
@@ -130,7 +130,7 @@ scheme: Pisces
 # Value before `||` delimeter is the target permalink.
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
 social:
-  GitHub: https://github.com/alex-0407 || github
+  GitHub: https://github.com/artdong || github
   E-Mail: mailto:itneituiquan@163.com || envelope
   QQ: http://wpa.qq.com/msgrd?v=3&uin=1029278668&site=在线客服&menu=yes || qq
   #Google: https://plus.google.com/yourname || google
@@ -376,8 +376,8 @@ Gitalk:
   clientID: 'c8164258ab4a996367d9'
   clientSecret: '8d03ebc861a146342b4b126955bc67e68293dd6f'
   repo: 'hexo-blog-grace'
-  owner: 'alex-0407'
-  admin: 'alex-0407'
+  owner: 'artdong'
+  admin: 'artdong'
   id: 'Demo'
   distractionFreeMode: false
 
