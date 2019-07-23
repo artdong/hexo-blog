@@ -36,7 +36,7 @@ tags:
 
 - Promise最大的好处是在异步执行的流程中，把执行代码和处理结果的代码清晰地分离了。
 
-![promise.gif](https://www.liaoxuefeng.com/files/attachments/1027242914217888/l)
+{% img /img/promise.png %}
 
 - 解决回调地狱（Callback Hell）问题 
 

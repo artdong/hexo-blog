@@ -12,7 +12,7 @@ js实现几种常见排序算法。
  
 冒泡排序：
 
-![bubbleSort.gif](https://upload-images.jianshu.io/upload_images/3100736-d38281a90f05aff1.gif?imageMogr2/auto-orient/strip)
+{% img /gif/bubbleSort.gif %}
 
 ```javascript
 const arr = [3, 44, 38, 5, 47, 15, 36, 26, 27, 2, 46, 4, 19, 50, 48];
@@ -83,7 +83,7 @@ console.log(bubbleSort(arr));
 
 选择排序：
 
-![selectSort.gif](https://upload-images.jianshu.io/upload_images/3100736-6bb5d8693bc99a16.gif?imageMogr2/auto-orient/strip)
+{% img /gif/selectSort.gif %}
 
 ```javacript
 const arr=[3,44,38,5,47,15,36,26,27,2,46,4,19,50,48];
@@ -162,8 +162,7 @@ console.log(selectionSort(arr));
 
 插入排序：
 
-![insertSort1.gif](https://upload-images.jianshu.io/upload_images/3100736-551606266d9282a5.gif?imageMogr2/auto-orient/strip)
-
+{% img /gif/insertSort.gif %}
 
 ```javacript
 const arr=[3,44,38,5,47,15,36,26,27,2,46,4,19,50,48];
