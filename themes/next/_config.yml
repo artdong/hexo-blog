@@ -55,7 +55,7 @@ footer:
     version: false
   # -------------------------------------------------------------
   # Any custom text can be defined here.
-  custom_text: <iframe frameborder="0" scrolling="0" width="90px" height="22px" src="https://ghbtns.com/github-btn.html?user=artdong&amp;repo=hexo-blog-grace&amp;type=star&amp;count=false"> </iframe>
+  custom_text: <iframe frameborder="0" scrolling="0" width="90px" height="22px" src="https://ghbtns.com/github-btn.html?user=artdong&amp;repo=hexo-blog&amp;type=star&amp;count=false"> </iframe>
 
 # ---------------------------------------------------------------
 # SEO Settings
@@ -375,7 +375,7 @@ Gitalk:
   enable: true
   clientID: 'c8164258ab4a996367d9'
   clientSecret: '8d03ebc861a146342b4b126955bc67e68293dd6f'
-  repo: 'hexo-blog-grace'
+  repo: 'hexo-blog'
   owner: 'artdong'
   admin: 'artdong'
   id: 'Demo'
